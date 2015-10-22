@@ -9,7 +9,7 @@ description: 初探获取Java项目的资源文件
 
 这里先探讨4种获取资源文件的方法：
     1.通过File类进行相关操作</br>
-    2.通过Class的getResource()方法</br>
+    2.通过Class的getResource()方法</br></br>
     3.通过ClassLoader的getResource()方法</br>
     4.通过SystemClassLoader的getResource()方法</br>
 
