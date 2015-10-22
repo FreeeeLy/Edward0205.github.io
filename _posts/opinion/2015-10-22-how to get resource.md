@@ -76,7 +76,7 @@ description: 初探获取Java项目的资源文件
 	}
 
 输出结果如下：</br>
-    注释:C:\Users\Administrator\workspace\classloader 为JavaP Project的根目录</br>
+    注释:C:\Users\Administrator\workspace\classloader 为Java Project的根目录</br>
 
     file location : C:\Users\Administrator\workspace\classloader
 	fileWith location : C:\
