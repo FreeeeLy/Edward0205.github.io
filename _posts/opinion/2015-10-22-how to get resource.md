@@ -78,14 +78,14 @@ description: 初探获取Java项目的资源文件
 输出结果如下：</br>
     注释:C:\Users\Administrator\workspace\classloader 为JavaP Project的根目录</br>
 
-    file location : C:\Users\Administrator\workspace\classloader</br>
-	fileWith location : C:\</br>
-	class url : /C:/Users/Administrator/workspace/classloader/bin/com/csu/ly/test/</br>
-	class urlWithSlash : /C:/Users/Administrator/workspace/classloader/bin/</br>
-	classloader url : /C:/Users/Administrator/workspace/classloader/bin/</br>
-	classloader urlWithSlash fail </br>
-	systemLoader url : /C:/Users/Administrator/workspace/classloader/bin/</br>
-	systemLoader urlWithSlash fail </br>
+    file location : C:\Users\Administrator\workspace\classloader
+	fileWith location : C:\
+	class url : /C:/Users/Administrator/workspace/classloader/bin/com/csu/ly/test/
+	class urlWithSlash : /C:/Users/Administrator/workspace/classloader/bin/
+	classloader url : /C:/Users/Administrator/workspace/classloader/bin/
+	classloader urlWithSlash fail 
+	systemLoader url : /C:/Users/Administrator/workspace/classloader/bin/
+	systemLoader urlWithSlash fail 
 
 
 接着，我们先看第二种情况，就是我们在自己的Java Project中，想获取某Jar包下的资源文件，这种情况可能更加的常见
@@ -93,12 +93,12 @@ description: 初探获取Java项目的资源文件
 
 得到的结果如下：</br>
 
-	file location : C:\Users\Administrator\workspace\classLoaderB\A.txt</br>
-	fileWith location : C:\A.txt</br>
-	class urlWithSlash fail </br>
-	classloader url : file:/C:/Users/Administrator/Desktop/getresource.jar!/A.txt</br>
+	file location : C:\Users\Administrator\workspace\classLoaderB\A.txt
+	fileWith location : C:\A.txt
+	class urlWithSlash fail 
+	classloader url : file:/C:/Users/Administrator/Desktop/getresource.jar!/A.txt
 	classloader urlWithSlash fail </br>
-	systemLoader url : file:/C:/Users/Administrator/Desktop/getresource.jar!/A.txt</br>
+	systemLoader url : file:/C:/Users/Administrator/Desktop/getresource.jar!/A.txt
 	systemLoader urlWithSlash fail </br>
 
 得到两种情况的结果之后，按照我的理解来分析一下规律：</br>
