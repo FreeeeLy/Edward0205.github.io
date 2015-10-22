@@ -97,9 +97,9 @@ description: 初探获取Java项目的资源文件
 	fileWith location : C:\A.txt
 	class urlWithSlash fail 
 	classloader url : file:/C:/Users/Administrator/Desktop/getresource.jar!/A.txt
-	classloader urlWithSlash fail </br>
+	classloader urlWithSlash fail 
 	systemLoader url : file:/C:/Users/Administrator/Desktop/getresource.jar!/A.txt
-	systemLoader urlWithSlash fail </br>
+	systemLoader urlWithSlash fail 
 
 得到两种情况的结果之后，按照我的理解来分析一下规律：</br>
     1.以File方式获取资源，其实是与文件在操作系统上面的路径来定位的，笔者在Windows系统上面运行，当不加/的时候，路径是相对于JavaProject的根目录的，加了之后则是相对于当前盘符的位置，这种方法感觉比较适合资源在操作系统一个相对固定而且是位置是可知的文件资源。</br>
