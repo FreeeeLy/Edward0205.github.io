@@ -46,3 +46,24 @@ description: 搭建SpringMVC-Freemarker-Tomcat环境
     `
 	至此Web Project的夹子基本是构成了,结构如下图：
 	![Create-6](http://www.liangye.info/images/springmvc/create-6.png)
+	
+	
+##在Tomcat上面运行项目
+    ###1.添加默认页面,在WEB-INF下面创建index.jsp,内容如下:
+	`
+	<html>
+		<body>
+				Hello
+		</body>
+	</html>
+	`
+	
+	如果在添加完index.jsp发现项目报错：The superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path
+原因就是当前项目没有加入servlet相关的类库，因为jsp本质上其实就是一个servlet。
+    可以通过maven来添加依赖，也可以直接引用tomcat的运行时类库，这里选择直接引用tomcat运行时类库:
+	![Create-7](http://www.liangye.info/images/springmvc/create-7.png)
+	![Create-8](http://www.liangye.info/images/springmvc/create-8.png)
+	
+	最后通过Tomcat去运行项目，这里就不详细说怎么运行了，不知道的童鞋请去google一下吧。
+	然后在IE的地址栏中输入http://localhost:8080/{项目名称}/ 出现Hello World页面的话，基本的Tomcat运行环境已经配置完毕
+	
