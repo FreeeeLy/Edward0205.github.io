@@ -1,0 +1,48 @@
+---
+layout: post
+title: 搭建SpringMVC-Freemarker-Tomcat环境
+category: opinion
+description: 搭建SpringMVC-Freemarker-Tomcat环境
+---
+
+    由于最近要帮忙开发一个简单的Portal，目前考虑用SpringMVC+Freemarker+Tomcat来搭建一个服务器环境
+##环境准备:
+    1.Maven [Maven](http://maven.apache.org)
+	2.Tomcat [Tomcat](http://tomcat.apache.org/index.html)
+
+##使用Eclipse创建Web项目
+    这里可以直接用maven的webapp模板来创建一个项目，不过博主不太喜欢这种方式，这里介绍另外一种方式
+	###1.新建Maven Project
+	![Create-1](http://www.liangye.info/images/springmvc/create-1.png)
+	![Create-2](http://www.liangye.info/images/springmvc/create-2.png)
+	这里然后点击next，然后根据自己情况写入Group Id和Artifact Id，点击Finish即可
+	
+	###2.将Maven Project转化成Maven Web Project
+	右键项目-Properties-Project Facets，如下图所示，勾选红框内选项，保存即可
+	![Create-3](http://www.liangye.info/images/springmvc/create-3.png)
+	可以看到项目结构如下：
+	![Create-4](http://www.liangye.info/images/springmvc/create-4.png)
+	多出了WebContent内容，WebContent就是在Tomcat中部署项目时候的根目录。
+	
+	博主不喜欢看到一个普通文件夹样式的东西，因此也把这个东西改了一下，这步可略过，有兴趣的朋友可以看看
+	
+	右键项目-new-Source Floder，创建新的源码文件夹，文件夹名我这里取src/main/webapp
+	接着用src/main/webapp取代WebContent：
+	右键项目-Build Path-Configure Build Path
+	![Create-5](http://www.liangye.info/images/springmvc/create-5.png)
+	然后在src/main/webapp下创建文件夹WEB-INF，并且在WEB-INF下面创建web.xml,web.xml内容如下:
+	
+	`
+	<?xml version="1.0" encoding="UTF-8"?>
+        <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+		http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+		<welcome-file-list>
+			<welcome-file>index.jsp</welcome-file>
+	    </welcome-file-list>
+    </web-app> 
+    `
+	至此Web Project的夹子基本是构成了,结构如下图：
+	![Create-6](http://www.liangye.info/images/springmvc/create-6.png)
