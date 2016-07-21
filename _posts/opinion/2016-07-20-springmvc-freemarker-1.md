@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 搭建SpringMVC-Freemarker-Tomcat环境
+title: 搭建SpringMVC-Freemarker-Tomcat环境 一
 category: opinion
-description: 搭建SpringMVC-Freemarker-Tomcat环境
+description: 搭建SpringMVC-Freemarker-Tomcat环境 一
 ---
 
     由于最近要帮忙开发一个简单的Portal，目前考虑用SpringMVC+Freemarker+Tomcat来搭建一个服务器环境
