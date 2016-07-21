@@ -1,36 +1,36 @@
----
+ï»¿---
 layout: post
-title: ´î½¨SpringMVC-Freemarker-Tomcat»·¾³
+title: æ­å»ºSpringMVC-Freemarker-Tomcatç¯å¢ƒ
 category: opinion
-description: ´î½¨SpringMVC-Freemarker-Tomcat»·¾³
+description: æ­å»ºSpringMVC-Freemarker-Tomcatç¯å¢ƒ
 ---
 
-    ÓÉÓÚ×î½üÒª°ïÃ¦¿ª·¢Ò»¸ö¼òµ¥µÄPortal£¬Ä¿Ç°¿¼ÂÇÓÃSpringMVC+Freemarker+TomcatÀ´´î½¨Ò»¸ö·şÎñÆ÷»·¾³
-##»·¾³×¼±¸:
+    ç”±äºæœ€è¿‘è¦å¸®å¿™å¼€å‘ä¸€ä¸ªç®€å•çš„Portalï¼Œç›®å‰è€ƒè™‘ç”¨SpringMVC+Freemarker+Tomcatæ¥æ­å»ºä¸€ä¸ªæœåŠ¡å™¨ç¯å¢ƒ
+##ç¯å¢ƒå‡†å¤‡:
     1.Maven [Maven](http://maven.apache.org)
 	2.Tomcat [Tomcat](http://tomcat.apache.org/index.html)
 
-##Ê¹ÓÃEclipse´´½¨WebÏîÄ¿
-    ÕâÀï¿ÉÒÔÖ±½ÓÓÃmavenµÄwebappÄ£°åÀ´´´½¨Ò»¸öÏîÄ¿£¬²»¹ı²©Ö÷²»Ì«Ï²»¶ÕâÖÖ·½Ê½£¬ÕâÀï½éÉÜÁíÍâÒ»ÖÖ·½Ê½
-	###1.ĞÂ½¨Maven Project
+##ä½¿ç”¨Eclipseåˆ›å»ºWebé¡¹ç›®
+    è¿™é‡Œå¯ä»¥ç›´æ¥ç”¨mavençš„webappæ¨¡æ¿æ¥åˆ›å»ºä¸€ä¸ªé¡¹ç›®ï¼Œä¸è¿‡åšä¸»ä¸å¤ªå–œæ¬¢è¿™ç§æ–¹å¼ï¼Œè¿™é‡Œä»‹ç»å¦å¤–ä¸€ç§æ–¹å¼
+	###1.æ–°å»ºMaven Project
 	![Create-1](http://www.liangye.info/images/springmvc/create-1.png)
 	![Create-2](http://www.liangye.info/images/springmvc/create-2.png)
-	ÕâÀïÈ»ºóµã»÷next£¬È»ºó¸ù¾İ×Ô¼ºÇé¿öĞ´ÈëGroup IdºÍArtifact Id£¬µã»÷Finish¼´¿É
+	è¿™é‡Œç„¶åç‚¹å‡»nextï¼Œç„¶åæ ¹æ®è‡ªå·±æƒ…å†µå†™å…¥Group Idå’ŒArtifact Idï¼Œç‚¹å‡»Finishå³å¯
 	
-	###2.½«Maven Project×ª»¯³ÉMaven Web Project
-	ÓÒ¼üÏîÄ¿-Properties-Project Facets£¬ÈçÏÂÍ¼ËùÊ¾£¬¹´Ñ¡ºì¿òÄÚÑ¡Ïî£¬±£´æ¼´¿É
+	###2.å°†Maven Projectè½¬åŒ–æˆMaven Web Project
+	å³é”®é¡¹ç›®-Properties-Project Facetsï¼Œå¦‚ä¸‹å›¾æ‰€ç¤ºï¼Œå‹¾é€‰çº¢æ¡†å†…é€‰é¡¹ï¼Œä¿å­˜å³å¯
 	![Create-3](http://www.liangye.info/images/springmvc/create-3.png)
-	¿ÉÒÔ¿´µ½ÏîÄ¿½á¹¹ÈçÏÂ£º
+	å¯ä»¥çœ‹åˆ°é¡¹ç›®ç»“æ„å¦‚ä¸‹ï¼š
 	![Create-4](http://www.liangye.info/images/springmvc/create-4.png)
-	¶à³öÁËWebContentÄÚÈİ£¬WebContent¾ÍÊÇÔÚTomcatÖĞ²¿ÊğÏîÄ¿Ê±ºòµÄ¸ùÄ¿Â¼¡£
+	å¤šå‡ºäº†WebContentå†…å®¹ï¼ŒWebContentå°±æ˜¯åœ¨Tomcatä¸­éƒ¨ç½²é¡¹ç›®æ—¶å€™çš„æ ¹ç›®å½•ã€‚
 	
-	²©Ö÷²»Ï²»¶¿´µ½Ò»¸öÆÕÍ¨ÎÄ¼ş¼ĞÑùÊ½µÄ¶«Î÷£¬Òò´ËÒ²°ÑÕâ¸ö¶«Î÷¸ÄÁËÒ»ÏÂ£¬Õâ²½¿ÉÂÔ¹ı£¬ÓĞĞËÈ¤µÄÅóÓÑ¿ÉÒÔ¿´¿´
+	åšä¸»ä¸å–œæ¬¢çœ‹åˆ°ä¸€ä¸ªæ™®é€šæ–‡ä»¶å¤¹æ ·å¼çš„ä¸œè¥¿ï¼Œå› æ­¤ä¹ŸæŠŠè¿™ä¸ªä¸œè¥¿æ”¹äº†ä¸€ä¸‹ï¼Œè¿™æ­¥å¯ç•¥è¿‡ï¼Œæœ‰å…´è¶£çš„æœ‹å‹å¯ä»¥çœ‹çœ‹
 	
-	ÓÒ¼üÏîÄ¿-new-Source Floder£¬´´½¨ĞÂµÄÔ´ÂëÎÄ¼ş¼Ğ£¬ÎÄ¼ş¼ĞÃûÎÒÕâÀïÈ¡src/main/webapp
-	½Ó×ÅÓÃsrc/main/webappÈ¡´úWebContent£º
-	ÓÒ¼üÏîÄ¿-Build Path-Configure Build Path
+	å³é”®é¡¹ç›®-new-Source Floderï¼Œåˆ›å»ºæ–°çš„æºç æ–‡ä»¶å¤¹ï¼Œæ–‡ä»¶å¤¹åæˆ‘è¿™é‡Œå–src/main/webapp
+	æ¥ç€ç”¨src/main/webappå–ä»£WebContentï¼š
+	å³é”®é¡¹ç›®-Build Path-Configure Build Path
 	![Create-5](http://www.liangye.info/images/springmvc/create-5.png)
-	È»ºóÔÚsrc/main/webappÏÂ´´½¨ÎÄ¼ş¼ĞWEB-INF£¬²¢ÇÒÔÚWEB-INFÏÂÃæ´´½¨web.xml,web.xmlÄÚÈİÈçÏÂ:
+	ç„¶ååœ¨src/main/webappä¸‹åˆ›å»ºæ–‡ä»¶å¤¹WEB-INFï¼Œå¹¶ä¸”åœ¨WEB-INFä¸‹é¢åˆ›å»ºweb.xml,web.xmlå†…å®¹å¦‚ä¸‹:
 	
 	`
 	<?xml version="1.0" encoding="UTF-8"?>
@@ -44,12 +44,12 @@ description: ´î½¨SpringMVC-Freemarker-Tomcat»·¾³
 	    </welcome-file-list>
     </web-app> 
     `
-	ÖÁ´ËWeb ProjectµÄ¼Ğ×Ó»ù±¾ÊÇ¹¹³ÉÁË,½á¹¹ÈçÏÂÍ¼£º
+	è‡³æ­¤Web Projectçš„å¤¹å­åŸºæœ¬æ˜¯æ„æˆäº†,ç»“æ„å¦‚ä¸‹å›¾ï¼š
 	![Create-6](http://www.liangye.info/images/springmvc/create-6.png)
 	
 	
-##ÔÚTomcatÉÏÃæÔËĞĞÏîÄ¿
-    ###1.Ìí¼ÓÄ¬ÈÏÒ³Ãæ,ÔÚWEB-INFÏÂÃæ´´½¨index.jsp,ÄÚÈİÈçÏÂ:
+##åœ¨Tomcatä¸Šé¢è¿è¡Œé¡¹ç›®
+    ###1.æ·»åŠ é»˜è®¤é¡µé¢,åœ¨WEB-INFä¸‹é¢åˆ›å»ºindex.jsp,å†…å®¹å¦‚ä¸‹:
 	`
 	<html>
 		<body>
@@ -58,12 +58,12 @@ description: ´î½¨SpringMVC-Freemarker-Tomcat»·¾³
 	</html>
 	`
 	
-	Èç¹ûÔÚÌí¼ÓÍêindex.jsp·¢ÏÖÏîÄ¿±¨´í£ºThe superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path
-Ô­Òò¾ÍÊÇµ±Ç°ÏîÄ¿Ã»ÓĞ¼ÓÈëservletÏà¹ØµÄÀà¿â£¬ÒòÎªjsp±¾ÖÊÉÏÆäÊµ¾ÍÊÇÒ»¸öservlet¡£
-    ¿ÉÒÔÍ¨¹ımavenÀ´Ìí¼ÓÒÀÀµ£¬Ò²¿ÉÒÔÖ±½ÓÒıÓÃtomcatµÄÔËĞĞÊ±Àà¿â£¬ÕâÀïÑ¡ÔñÖ±½ÓÒıÓÃtomcatÔËĞĞÊ±Àà¿â:
+	å¦‚æœåœ¨æ·»åŠ å®Œindex.jspå‘ç°é¡¹ç›®æŠ¥é”™ï¼šThe superclass "javax.servlet.http.HttpServlet" was not found on the Java Build Path
+åŸå› å°±æ˜¯å½“å‰é¡¹ç›®æ²¡æœ‰åŠ å…¥servletç›¸å…³çš„ç±»åº“ï¼Œå› ä¸ºjspæœ¬è´¨ä¸Šå…¶å®å°±æ˜¯ä¸€ä¸ªservletã€‚
+    å¯ä»¥é€šè¿‡mavenæ¥æ·»åŠ ä¾èµ–ï¼Œä¹Ÿå¯ä»¥ç›´æ¥å¼•ç”¨tomcatçš„è¿è¡Œæ—¶ç±»åº“ï¼Œè¿™é‡Œé€‰æ‹©ç›´æ¥å¼•ç”¨tomcatè¿è¡Œæ—¶ç±»åº“:
 	![Create-7](http://www.liangye.info/images/springmvc/create-7.png)
 	![Create-8](http://www.liangye.info/images/springmvc/create-8.png)
 	
-	×îºóÍ¨¹ıTomcatÈ¥ÔËĞĞÏîÄ¿£¬ÕâÀï¾Í²»ÏêÏ¸ËµÔõÃ´ÔËĞĞÁË£¬²»ÖªµÀµÄÍ¯Ğ¬ÇëÈ¥googleÒ»ÏÂ°É¡£
-	È»ºóÔÚIEµÄµØÖ·À¸ÖĞÊäÈëhttp://localhost:8080/{ÏîÄ¿Ãû³Æ}/ ³öÏÖHello WorldÒ³ÃæµÄ»°£¬»ù±¾µÄTomcatÔËĞĞ»·¾³ÒÑ¾­ÅäÖÃÍê±Ï
+	æœ€åé€šè¿‡Tomcatå»è¿è¡Œé¡¹ç›®ï¼Œè¿™é‡Œå°±ä¸è¯¦ç»†è¯´æ€ä¹ˆè¿è¡Œäº†ï¼Œä¸çŸ¥é“çš„ç«¥é‹è¯·å»googleä¸€ä¸‹å§ã€‚
+	ç„¶ååœ¨IEçš„åœ°å€æ ä¸­è¾“å…¥http://localhost:8080/{é¡¹ç›®åç§°}/ å‡ºç°Hello Worldé¡µé¢çš„è¯ï¼ŒåŸºæœ¬çš„Tomcatè¿è¡Œç¯å¢ƒå·²ç»é…ç½®å®Œæ¯•
 	
