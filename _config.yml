@@ -4,6 +4,7 @@ markdown: rdiscount
 pygments: true
 paginate: 8
 permalink: /:title
+encoding: UTF-8
 
 title: Edward.com
 url: http://Edward.com
