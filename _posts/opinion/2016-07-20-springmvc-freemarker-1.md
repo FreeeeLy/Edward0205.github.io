@@ -5,7 +5,8 @@ category: opinion
 description: 搭建SpringMVC-Freemarker-Tomcat环境 一
 ---
 
-    由于最近要帮忙开发一个简单的Portal，目前考虑用SpringMVC+Freemarker+Tomcat来搭建一个服务器环境
+由于最近要帮忙开发一个简单的Portal，目前考虑用SpringMVC+Freemarker+Tomcat来搭建一个服务器环境
+
 ##环境准备:
 1.Maven [Maven](http://maven.apache.org)
 
@@ -33,9 +34,12 @@ description: 搭建SpringMVC-Freemarker-Tomcat环境 一
 
 
 右键项目-new-Source Floder，创建新的源码文件夹，文件夹名我这里取src/main/webapp
+
 右键项目-Properties-Deployment Assembly
 
 ![Create-5](http://www.liangye.info/images/springmvc/create-5.png)
+
+按图片修改部署路径
 
 然后在src/main/webapp下创建文件夹WEB-INF，并且在WEB-INF下面创建web.xml,web.xml内容如下:
 	
