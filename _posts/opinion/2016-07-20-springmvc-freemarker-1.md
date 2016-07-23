@@ -18,7 +18,7 @@ description: 搭建SpringMVC-Freemarker-Tomcat环境 一
 ![Create-1](http://www.liangye.info/images/springmvc/create-1.png)
 ![Create-2](http://www.liangye.info/images/springmvc/create-2.png)
 
-这里然后点击next，然后根据自己情况写入Group Id和Artifact Id，点击Finish即可
+这里然后点击next，然后根据自己情况写入Group Id和Artifact Id，Packaging选择war 然后点击Finish即可
 	
 ###2.将Maven Project转化成Maven Web Project
 右键项目-Properties-Project Facets，如下图所示，勾选红框内选项，保存即可
@@ -29,13 +29,11 @@ description: 搭建SpringMVC-Freemarker-Tomcat环境 一
 
 ![Create-4](http://www.liangye.info/images/springmvc/create-4.png)
 
-多出了WebContent内容，WebContent就是在Tomcat中部署项目时候的根目录。
-	
-博主不喜欢看到一个普通文件夹样式的东西，因此也把这个东西改了一下，这步可略过，有兴趣的朋友可以看看
-	
+多出了WebContent内容，WebContent就是在Tomcat中部署项目时候的根目录，接着我们更改一下部署路径
+
+
 右键项目-new-Source Floder，创建新的源码文件夹，文件夹名我这里取src/main/webapp
-接着用src/main/webapp取代WebContent：
-右键项目-Build Path-Configure Build Path
+右键项目-Properties-Deployment Assembly
 
 ![Create-5](http://www.liangye.info/images/springmvc/create-5.png)
 
