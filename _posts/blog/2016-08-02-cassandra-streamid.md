@@ -89,7 +89,7 @@ atomicGetAndSetFirstAvailable方法通过Long.numberOfTrailingZeros方法获取L
 
 ####二.释放一个可用的StreamId
 
-这个和获取可用的StreamId原理差不多，比如说要释放StreamId 3，计算出的掩码为100，此时和Long变量进行或运算00000100000 | 100 结果是00000100100，表明StreamId 3又重新可用了
+这个和获取可用的StreamId原理差不多，比如说要释放StreamId 3，计算出的掩码为100，此时和Long变量进行或运算00000100000 \| 100 结果是00000100100，表明StreamId 3又重新可用了
 
 ####三.处理竞争关系
 
