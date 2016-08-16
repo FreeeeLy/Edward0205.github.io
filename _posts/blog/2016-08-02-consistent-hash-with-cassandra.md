@@ -126,7 +126,7 @@ category: blog
 
 1.入参的searchToken是某行记录的PartitionKey计算出来的哈希值，tokenMetadata主要为Cassandra集群的网络拓补情况
 
-2.4-31行是一些要用到的数据结构的初始化，解释一下各个变量的含义:
+2.4-23行是一些要用到的数据结构的初始化，解释一下各个变量的含义:
 
 Set\<InetAddress\> replicas:副本的所有节点所分布的节点IP
 
@@ -140,7 +140,7 @@ Map\<String, Multimap\<String, InetAddress\>\> racks:Cassandra中每个Datacente
 
 Iterator\<Token\> tokenIter:Cassandra中从行记录Token开始的哈希环的虚拟节点分布
 
-3.33-74行是Cassandra去选择合适的节点来分布副本的具体逻辑总结：在哈希环上以某行记录的Token为起点，顺时针遍历哈希环，直到分配好所有的副本
+3.24-64行是Cassandra去选择合适的节点来分布副本的具体逻辑总结：在哈希环上以某行记录的Token为起点，顺时针遍历哈希环，直到分配好所有的副本
 
 具体逻辑如下：
 
