@@ -35,6 +35,7 @@ Primary key只包含一列，该Key用以计算Cassandra的PartitionKey
            age int,
            name text,
            primary key(id,age) );
+
 Primary Key包含两列(或者两列以上),primary key中的设置的第一列用以计算Cassandra的PartitionKey，剩下的若干列称之为Clustering columns，这些Clustering columns是用来在同一个partition进行再次分区的，再分区的排序是按照在primary key中定义的顺序来决定的。
 
 ## Cassandra墓碑类型 ##
