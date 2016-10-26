@@ -87,7 +87,7 @@ tombstone_failure_threshold 设置一次查询中超过多少墓碑就返回查�
 
 2.对Clustering Columns进行删除
 
-    Delete from sds.test where id = 1 and age = 1;
+    Delete from mykeyspace.test where id = 1 and age = 1;
 
 这里是根据表格的partition key和clustering columns来联合删除表格中的整行记录,将会生成RangeTombStone，可视化格式如下:
 
@@ -100,7 +100,7 @@ tombstone_failure_threshold 设置一次查询中超过多少墓碑就返回查�
 
 3.对普通的Columns进行删除
 
-    Delete name from sds.test where id = 1 and age = 1;
+    Delete name from mykeyspace.test where id = 1 and age = 1;
 
 这里是根据表格的partition key和clustering columns来联合删除表格中的某一行某一列记录,将会生成TombStone，可视化格式如下:
 
