@@ -96,7 +96,8 @@ Master-Master跟Master-Slave主要的区别就是，Master-Master中每台服务
 
 Google Chubby的作者Mike Burrows说过：
 	
-	there is only one consensus protocol, and that’s Paxos” – all other approaches are just broken versions of Paxos.
+
+> there is only one consensus protocol, and that’s Paxos” – all other approaches are just broken versions of Paxos.
 
 Paxos能得到如此美誉，和其精妙算法密切相关，我看了很多Paxos的相关资料，也就是只能够勉强理解一些Paxos的精髓，这里就不班门弄斧了，关于Paxos可以移步以下文章，对Paxos进行了解:
 
